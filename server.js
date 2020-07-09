@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/moods");
 
 app.listen(PORT, function(){
     console.log (`You are listening on ${PORT} congratulations`);

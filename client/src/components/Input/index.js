@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function NewActivity(props){
+export function NewActivity(props){
     return(
         <form action="#">
         <p>
@@ -23,5 +23,22 @@ export default function NewActivity(props){
         </p>
         
       </form> 
-    )
+    );
+}
+export function EnterMood(props){
+  return(
+    
+      <p className="mood-range">
+        How was your day today?
+        <input type="range" id="mood" min="3" max="7"/>
+      </p>
+    
+  )
+}
+export function SaveBtn(props){
+  return(
+    <button className="btn waves-effect waves-light" type="submit" name="action">Save
+    {/* <i className="material-icons right">send</i> */}
+  </button>
+  )
 }
